@@ -96,7 +96,11 @@
               type="text"
               class="form-control"
               placeholder="Inserire il titolo del libro"
+              aria-label="Inserire il titolo"
             />
+            <div id="Inserire il titolo" class="form-text">
+              Titolo versione Italiana
+            </div>
           </div>
 
           <div class="col-md-4">
@@ -135,15 +139,35 @@
           <br />
 
           <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" />
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Note</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
             </div>
           </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckIndeterminate"
+            />
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Disponibile anche in digitale
+            </label>
+          </div>
+
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">
+              Aggiungi libro
+            </button>
           </div>
         </form>
       </section>
